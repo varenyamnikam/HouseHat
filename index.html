@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Expanding card page transition effect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--
+  Please note: this code is in no way ready to be used as is in production on your website. It will need to be adapted to be cross browser compliant & accessible. I just wanted to share how one might go about this effect with CSS & JS and no other dependencies
+  --> <img src="logo-dark.png" alt="Logo" class="logo">
+  <div class="container">
+    <div class="card-column column-0">
+      <div class="card card-color-0">
+        <div class="border"></div>
+        <img src="house1.jpg" />
+        <h1>House 1</h1>
+        <p class="location">Location: Southern Wales</p>
+        <p class="price">Price: 300,000</p>
+      </div>
+      
+      <div class="card card-color-2" data-location="City B" data-price="$600,000">
+        <div class="border"></div>
+        <img src="house2.jpg" />
+        <h1>House 2</h1>
+        <p class="location">Location: United Kingdom,Birmingam</p>
+        <p class="price">Price: 200,000</p>
+      </div>
+    </div>
+    <div class="card-column column-1">
+      <div class="card card-color-1" data-location="City C" data-price="$700,000">
+        <div class="border"></div>
+        <img src="house3.jpg" />
+        <h1>House 3</h1>
+        <p class="location">Location: United Kingdom,LiverPool</p>
+        <p class="price">Price: 250,000</p>
+      </div>
+      <div class="card card-color-3" data-location="City D" data-price="$800,000">
+        <div class="border"></div>
+        <img src="house4.jpg" />
+        <h1>House 4</h1>
+        <p class="location">Location: United Kingdom,London</p>
+        <p class="price">Price: 350,000</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="cover" class="cover"></div>
+
+  <div id="open-content" class="open-content">
+    <a href="#" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
+    <img id="open-content-image" src="" />
+    <div class="text" id="open-content-text">
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
